@@ -208,30 +208,76 @@ public class Functions {
 		String account_type = null;
 		double balance = 0;
 		double amount = 0;
+
+		int ch = 0;
 		smile.message("What is your customer ID? ");
 		try {
 			customer_id = Integer.parseInt(scanner.nextLine());
 		} catch (NumberFormatException e) {
 		}
-		
+
 		smile.message("What is your account number? ");
 		try {
 			acc_num = Integer.parseInt(scanner.nextLine());
 		} catch (NumberFormatException e) {
 		}
-		
+
 		smile.message("How much would you like to withdraw? ");
 		try {
 			amount = Double.parseDouble(scanner.nextLine());
 		} catch (NumberFormatException e) {
 		}
+		do {
+			try {
+				smile.message("");
+				smile.message("Will you be Withdrawing from Your Checking or Savings Account?");
+				smile.message("1) Checking");
+				smile.message("2) Savings");
+				smile.message("3) Exit");
+				ch = Integer.parseInt(scanner.nextLine());
+				smile.message("");
+			} catch (NumberFormatException e) {
+			}
 
-		try {
-			NTC.withdrawAcc(customer_id, acc_num, account_type, balance, amount);
-		} catch (SmileException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+			switch (ch) {
+			case 1:
+				account_type = "checking";
+				// VAS.viewAccount(ID, account_type);
+				try {
+					NTC.withdrawAcc(customer_id, acc_num, account_type, balance, amount);
+				} catch (SmileException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				ch = 0;
+				break;
+			case 2:
+				account_type = "savings";
+				// smile.message("Search by entering Customer ID");
+				try {
+				} catch (NumberFormatException e) {
+
+				}
+
+				// VAS.viewAccount(ID, account_type);
+				try {
+					NTC.withdrawAcc(customer_id, acc_num, account_type, balance, amount);
+				} catch (SmileException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				ch = 0;
+				break;
+			case 3:
+				smile.message("Going Back...");
+				smile.message("");
+				break;
+
+			default:
+				smile.error();
+			}
+
+		} while (ch != 3);
 
 	}
 
