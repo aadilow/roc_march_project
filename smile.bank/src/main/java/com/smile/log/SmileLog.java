@@ -40,7 +40,8 @@ public class SmileLog {
 		log.info("3) Deposit");
 		log.info("4) Transfer Between your own Accounts");
 		log.info("5) Send Money");
-		log.info("6) Logout");
+		log.info("6) View Balance");
+		log.info("7) Logout");
 	}
 
 	public void employeeConsole() {

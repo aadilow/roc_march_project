@@ -198,4 +198,66 @@ public class Functions {
 		
 	}
 	
+	public void NewTransaction() {
+		
+	}
+	
+	public void ViewAccountCustomer(int ID) {
+		String account_type = null;
+		int ch = 0;
+		
+		do {
+			try {
+				smile.message("");
+				smile.message("Will you be Viewing Your Checking or Savings Account?");
+				smile.message("1) Checking");
+				smile.message("2) Savings");
+				smile.message("3) Exit");
+				ch = Integer.parseInt(scanner.nextLine());
+				smile.message("");
+			} catch (NumberFormatException e) {
+			}
+
+			switch (ch) {
+			case 1:
+				account_type = "checking";
+				try {
+					
+					VAS.viewAccount(ID,account_type);
+
+				} catch (SmileException e) {
+					smile.warn("No account found for Customer ID " +ID);
+					//e.printStackTrace();
+				}
+				ch = 0;
+				break;
+			case 2:
+				account_type = "savings";
+				try {
+					smile.message("Search by entering Customer ID");
+					try {
+					} catch(NumberFormatException e) {
+						
+					}
+					
+					VAS.viewAccount(ID,account_type);
+				} catch (SmileException e) {
+					smile.warn("No account found for Customer ID " +ID);
+					//e.printStackTrace();
+				}
+				ch = 0;
+				break;
+			case 3:
+				smile.message("Going Back...");
+				smile.message("");
+				break;
+
+			default:
+				smile.error();
+			}
+
+			
+		} while (ch != 3);
+	}
+	
 }
