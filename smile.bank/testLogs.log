@@ -25276,3 +25276,139 @@
 {INFO} -  [com.smile.log.SmileLog]   -          Mar-25-21 Thursday EDT 08:29:28
 {INFO} -  [com.smile.log.SmileLog]   -     Awaiting Your Response:     Mar-25-21 Thursday EDT 08:29:28
 {INFO} -  [com.smile.log.SmileLog]   -     Thank You for using Smile Bank! Goodbye!     Mar-25-21 Thursday EDT 08:29:29
+{INFO} -  [com.smile.log.SmileLog]   -     Hello! Welcome to Smile Bank!     Mar-25-21 Thursday EDT 09:52:45
+{INFO} -  [com.smile.log.SmileLog]   -          Mar-25-21 Thursday EDT 09:52:45
+{INFO} -  [com.smile.log.SmileLog]   -     Please Login to your Account or Register!     Mar-25-21 Thursday EDT 09:52:45
+{INFO} -  [com.smile.log.SmileLog]   -          Mar-25-21 Thursday EDT 09:52:45
+{INFO} -  [com.smile.log.SmileLog]   -     1) Employee Login     Mar-25-21 Thursday EDT 09:52:45
+{INFO} -  [com.smile.log.SmileLog]   -     2) Customer Login     Mar-25-21 Thursday EDT 09:52:45
+{INFO} -  [com.smile.log.SmileLog]   -     3) Register for an Account     Mar-25-21 Thursday EDT 09:52:45
+{INFO} -  [com.smile.log.SmileLog]   -     4) Exit App     Mar-25-21 Thursday EDT 09:52:45
+{INFO} -  [com.smile.log.SmileLog]   -          Mar-25-21 Thursday EDT 09:52:45
+{INFO} -  [com.smile.log.SmileLog]   -     Type and enter the number for your selection     Mar-25-21 Thursday EDT 09:52:45
+{INFO} -  [com.smile.log.SmileLog]   -          Mar-25-21 Thursday EDT 09:52:45
+{INFO} -  [com.smile.log.SmileLog]   -     Awaiting Your Response:     Mar-25-21 Thursday EDT 09:52:45
+{INFO} -  [com.smile.log.SmileLog]   -     Please Login with your Credentials     Mar-25-21 Thursday EDT 09:52:47
+{INFO} -  [com.smile.log.SmileLog]   -          Mar-25-21 Thursday EDT 09:52:47
+{INFO} -  [com.smile.log.SmileLog]   -     Enter your Email:      Mar-25-21 Thursday EDT 09:52:47
+{INFO} -  [com.smile.log.SmileLog]   -     Enter your Password:      Mar-25-21 Thursday EDT 09:52:51
+{INFO} -  [com.smile.log.SmileLog]   -     Login Success!     Mar-25-21 Thursday EDT 09:52:53
+{INFO} -  [com.smile.log.SmileLog]   -     ID is  157     Mar-25-21 Thursday EDT 09:52:53
+{INFO} -  [com.smile.log.SmileLog]   -     User: make@make     Mar-25-21 Thursday EDT 09:52:53
+{INFO} -  [com.smile.log.SmileLog]   -     Welcome! Please make a selection     Mar-25-21 Thursday EDT 09:52:53
+{INFO} -  [com.smile.log.SmileLog]   -          Mar-25-21 Thursday EDT 09:52:53
+{INFO} -  [com.smile.log.SmileLog]   -     1) Open a new Checkings or Savings Account     Mar-25-21 Thursday EDT 09:52:53
+{INFO} -  [com.smile.log.SmileLog]   -     2) Withdrawl     Mar-25-21 Thursday EDT 09:52:53
+{INFO} -  [com.smile.log.SmileLog]   -     3) Deposit     Mar-25-21 Thursday EDT 09:52:53
+{INFO} -  [com.smile.log.SmileLog]   -     4) Transfer Between your own Accounts     Mar-25-21 Thursday EDT 09:52:53
+{INFO} -  [com.smile.log.SmileLog]   -     5) Send Money     Mar-25-21 Thursday EDT 09:52:53
+{INFO} -  [com.smile.log.SmileLog]   -     6) View Balance     Mar-25-21 Thursday EDT 09:52:53
+{INFO} -  [com.smile.log.SmileLog]   -     7) Logout     Mar-25-21 Thursday EDT 09:52:53
+{INFO} -  [com.smile.log.SmileLog]   -     What is your customer ID?      Mar-25-21 Thursday EDT 09:53:05
+{INFO} -  [com.smile.log.SmileLog]   -     What is your account number?      Mar-25-21 Thursday EDT 09:53:08
+{INFO} -  [com.smile.log.SmileLog]   -     How much would you like to withdraw?      Mar-25-21 Thursday EDT 09:53:11
+{INFO} -  [com.smile.log.SmileLog]   -          Mar-25-21 Thursday EDT 09:53:12
+{INFO} -  [com.smile.log.SmileLog]   -     Will you be Withdrawing from Your Checking or Savings Account?     Mar-25-21 Thursday EDT 09:53:12
+{INFO} -  [com.smile.log.SmileLog]   -     1) Checking     Mar-25-21 Thursday EDT 09:53:12
+{INFO} -  [com.smile.log.SmileLog]   -     2) Savings     Mar-25-21 Thursday EDT 09:53:12
+{INFO} -  [com.smile.log.SmileLog]   -     3) Exit     Mar-25-21 Thursday EDT 09:53:12
+{INFO} -  [com.smile.log.SmileLog]   -          Mar-25-21 Thursday EDT 09:53:14
+{INFO} -  [com.smile.log.SmileLog]   -     Reason Failed: Batch entry 0 insert into bank.schema.transactions (customer_id, transaction_type,account_type,transaction_amount)values(157,'Withdrawl','savings',0.0) was aborted: ERROR: cross-database references are not implemented: "bank.schema.transactions"
+  Position: 13  Call getNextException to see other errors in the batch.     Mar-25-21 Thursday EDT 09:53:14
+{INFO} -  [com.smile.log.SmileLog]   -          Mar-25-21 Thursday EDT 09:53:14
+{INFO} -  [com.smile.log.SmileLog]   -          Mar-25-21 Thursday EDT 09:53:14
+{INFO} -  [com.smile.log.SmileLog]   -     Will you be Withdrawing from Your Checking or Savings Account?     Mar-25-21 Thursday EDT 09:53:14
+{INFO} -  [com.smile.log.SmileLog]   -     1) Checking     Mar-25-21 Thursday EDT 09:53:14
+{INFO} -  [com.smile.log.SmileLog]   -     2) Savings     Mar-25-21 Thursday EDT 09:53:14
+{INFO} -  [com.smile.log.SmileLog]   -     3) Exit     Mar-25-21 Thursday EDT 09:53:14
+{ERROR} -  [com.smile.log.SmileLog]   -     Error, Invalid Selction. Please Try Again:      Mar-25-21 Thursday EDT 09:53:38
+{INFO} -  [com.smile.log.SmileLog]   -          Mar-25-21 Thursday EDT 09:53:38
+{INFO} -  [com.smile.log.SmileLog]   -     Will you be Withdrawing from Your Checking or Savings Account?     Mar-25-21 Thursday EDT 09:53:38
+{INFO} -  [com.smile.log.SmileLog]   -     1) Checking     Mar-25-21 Thursday EDT 09:53:38
+{INFO} -  [com.smile.log.SmileLog]   -     2) Savings     Mar-25-21 Thursday EDT 09:53:38
+{INFO} -  [com.smile.log.SmileLog]   -     3) Exit     Mar-25-21 Thursday EDT 09:53:38
+{INFO} -  [com.smile.log.SmileLog]   -          Mar-25-21 Thursday EDT 09:53:40
+{INFO} -  [com.smile.log.SmileLog]   -     Going Back...     Mar-25-21 Thursday EDT 09:53:40
+{INFO} -  [com.smile.log.SmileLog]   -          Mar-25-21 Thursday EDT 09:53:40
+{INFO} -  [com.smile.log.SmileLog]   -     User: make@make     Mar-25-21 Thursday EDT 09:53:40
+{INFO} -  [com.smile.log.SmileLog]   -     Welcome! Please make a selection     Mar-25-21 Thursday EDT 09:53:40
+{INFO} -  [com.smile.log.SmileLog]   -          Mar-25-21 Thursday EDT 09:53:40
+{INFO} -  [com.smile.log.SmileLog]   -     1) Open a new Checkings or Savings Account     Mar-25-21 Thursday EDT 09:53:40
+{INFO} -  [com.smile.log.SmileLog]   -     2) Withdrawl     Mar-25-21 Thursday EDT 09:53:40
+{INFO} -  [com.smile.log.SmileLog]   -     3) Deposit     Mar-25-21 Thursday EDT 09:53:40
+{INFO} -  [com.smile.log.SmileLog]   -     4) Transfer Between your own Accounts     Mar-25-21 Thursday EDT 09:53:40
+{INFO} -  [com.smile.log.SmileLog]   -     5) Send Money     Mar-25-21 Thursday EDT 09:53:40
+{INFO} -  [com.smile.log.SmileLog]   -     6) View Balance     Mar-25-21 Thursday EDT 09:53:40
+{INFO} -  [com.smile.log.SmileLog]   -     7) Logout     Mar-25-21 Thursday EDT 09:53:40
+{INFO} -  [com.smile.log.SmileLog]   -          Mar-25-21 Thursday EDT 09:53:43
+{INFO} -  [com.smile.log.SmileLog]   -     Will you be Viewing Your Checking or Savings Account?     Mar-25-21 Thursday EDT 09:53:43
+{INFO} -  [com.smile.log.SmileLog]   -     1) Checking     Mar-25-21 Thursday EDT 09:53:43
+{INFO} -  [com.smile.log.SmileLog]   -     2) Savings     Mar-25-21 Thursday EDT 09:53:43
+{INFO} -  [com.smile.log.SmileLog]   -     3) Exit     Mar-25-21 Thursday EDT 09:53:43
+{INFO} -  [com.smile.log.SmileLog]   -          Mar-25-21 Thursday EDT 09:53:46
+{INFO} -  [com.smile.log.SmileLog]   -     [Account Type: checking || Acc_Num: 3, Balance: $890000.0 || customer_id: 157 || account_status: Approved]     Mar-25-21 Thursday EDT 09:53:46
+{INFO} -  [com.smile.log.SmileLog]   -          Mar-25-21 Thursday EDT 09:53:46
+{INFO} -  [com.smile.log.SmileLog]   -     Will you be Viewing Your Checking or Savings Account?     Mar-25-21 Thursday EDT 09:53:46
+{INFO} -  [com.smile.log.SmileLog]   -     1) Checking     Mar-25-21 Thursday EDT 09:53:46
+{INFO} -  [com.smile.log.SmileLog]   -     2) Savings     Mar-25-21 Thursday EDT 09:53:46
+{INFO} -  [com.smile.log.SmileLog]   -     3) Exit     Mar-25-21 Thursday EDT 09:53:46
+{INFO} -  [com.smile.log.SmileLog]   -          Mar-25-21 Thursday EDT 09:53:52
+{INFO} -  [com.smile.log.SmileLog]   -     Going Back...     Mar-25-21 Thursday EDT 09:53:52
+{INFO} -  [com.smile.log.SmileLog]   -          Mar-25-21 Thursday EDT 09:53:52
+{INFO} -  [com.smile.log.SmileLog]   -     User: make@make     Mar-25-21 Thursday EDT 09:53:52
+{INFO} -  [com.smile.log.SmileLog]   -     Welcome! Please make a selection     Mar-25-21 Thursday EDT 09:53:52
+{INFO} -  [com.smile.log.SmileLog]   -          Mar-25-21 Thursday EDT 09:53:52
+{INFO} -  [com.smile.log.SmileLog]   -     1) Open a new Checkings or Savings Account     Mar-25-21 Thursday EDT 09:53:52
+{INFO} -  [com.smile.log.SmileLog]   -     2) Withdrawl     Mar-25-21 Thursday EDT 09:53:52
+{INFO} -  [com.smile.log.SmileLog]   -     3) Deposit     Mar-25-21 Thursday EDT 09:53:52
+{INFO} -  [com.smile.log.SmileLog]   -     4) Transfer Between your own Accounts     Mar-25-21 Thursday EDT 09:53:52
+{INFO} -  [com.smile.log.SmileLog]   -     5) Send Money     Mar-25-21 Thursday EDT 09:53:52
+{INFO} -  [com.smile.log.SmileLog]   -     6) View Balance     Mar-25-21 Thursday EDT 09:53:52
+{INFO} -  [com.smile.log.SmileLog]   -     7) Logout     Mar-25-21 Thursday EDT 09:53:52
+{INFO} -  [com.smile.log.SmileLog]   -     What is your customer ID?      Mar-25-21 Thursday EDT 09:53:55
+{INFO} -  [com.smile.log.SmileLog]   -     What is your account number?      Mar-25-21 Thursday EDT 09:53:58
+{INFO} -  [com.smile.log.SmileLog]   -     How much would you like to withdraw?      Mar-25-21 Thursday EDT 09:54:01
+{INFO} -  [com.smile.log.SmileLog]   -          Mar-25-21 Thursday EDT 09:54:04
+{INFO} -  [com.smile.log.SmileLog]   -     Will you be Withdrawing from Your Checking or Savings Account?     Mar-25-21 Thursday EDT 09:54:04
+{INFO} -  [com.smile.log.SmileLog]   -     1) Checking     Mar-25-21 Thursday EDT 09:54:04
+{INFO} -  [com.smile.log.SmileLog]   -     2) Savings     Mar-25-21 Thursday EDT 09:54:04
+{INFO} -  [com.smile.log.SmileLog]   -     3) Exit     Mar-25-21 Thursday EDT 09:54:04
+{INFO} -  [com.smile.log.SmileLog]   -          Mar-25-21 Thursday EDT 09:54:07
+{INFO} -  [com.smile.log.SmileLog]   -          Mar-25-21 Thursday EDT 09:54:07
+{INFO} -  [com.smile.log.SmileLog]   -     Will you be Withdrawing from Your Checking or Savings Account?     Mar-25-21 Thursday EDT 09:54:07
+{INFO} -  [com.smile.log.SmileLog]   -     1) Checking     Mar-25-21 Thursday EDT 09:54:07
+{INFO} -  [com.smile.log.SmileLog]   -     2) Savings     Mar-25-21 Thursday EDT 09:54:07
+{INFO} -  [com.smile.log.SmileLog]   -     3) Exit     Mar-25-21 Thursday EDT 09:54:07
+{INFO} -  [com.smile.log.SmileLog]   -          Mar-25-21 Thursday EDT 09:54:18
+{INFO} -  [com.smile.log.SmileLog]   -          Mar-25-21 Thursday EDT 09:54:18
+{INFO} -  [com.smile.log.SmileLog]   -     Will you be Withdrawing from Your Checking or Savings Account?     Mar-25-21 Thursday EDT 09:54:18
+{INFO} -  [com.smile.log.SmileLog]   -     1) Checking     Mar-25-21 Thursday EDT 09:54:18
+{INFO} -  [com.smile.log.SmileLog]   -     2) Savings     Mar-25-21 Thursday EDT 09:54:18
+{INFO} -  [com.smile.log.SmileLog]   -     3) Exit     Mar-25-21 Thursday EDT 09:54:18
+{INFO} -  [com.smile.log.SmileLog]   -          Mar-25-21 Thursday EDT 09:54:22
+{INFO} -  [com.smile.log.SmileLog]   -     Going Back...     Mar-25-21 Thursday EDT 09:54:22
+{INFO} -  [com.smile.log.SmileLog]   -          Mar-25-21 Thursday EDT 09:54:22
+{INFO} -  [com.smile.log.SmileLog]   -     User: make@make     Mar-25-21 Thursday EDT 09:54:22
+{INFO} -  [com.smile.log.SmileLog]   -     Welcome! Please make a selection     Mar-25-21 Thursday EDT 09:54:22
+{INFO} -  [com.smile.log.SmileLog]   -          Mar-25-21 Thursday EDT 09:54:22
+{INFO} -  [com.smile.log.SmileLog]   -     1) Open a new Checkings or Savings Account     Mar-25-21 Thursday EDT 09:54:22
+{INFO} -  [com.smile.log.SmileLog]   -     2) Withdrawl     Mar-25-21 Thursday EDT 09:54:22
+{INFO} -  [com.smile.log.SmileLog]   -     3) Deposit     Mar-25-21 Thursday EDT 09:54:22
+{INFO} -  [com.smile.log.SmileLog]   -     4) Transfer Between your own Accounts     Mar-25-21 Thursday EDT 09:54:22
+{INFO} -  [com.smile.log.SmileLog]   -     5) Send Money     Mar-25-21 Thursday EDT 09:54:22
+{INFO} -  [com.smile.log.SmileLog]   -     6) View Balance     Mar-25-21 Thursday EDT 09:54:22
+{INFO} -  [com.smile.log.SmileLog]   -     7) Logout     Mar-25-21 Thursday EDT 09:54:22
+{INFO} -  [com.smile.log.SmileLog]   -     Logging out...     Mar-25-21 Thursday EDT 09:54:23
+{INFO} -  [com.smile.log.SmileLog]   -          Mar-25-21 Thursday EDT 09:54:23
+{INFO} -  [com.smile.log.SmileLog]   -          Mar-25-21 Thursday EDT 09:54:23
+{INFO} -  [com.smile.log.SmileLog]   -     Please Login to your Account or Register!     Mar-25-21 Thursday EDT 09:54:23
+{INFO} -  [com.smile.log.SmileLog]   -          Mar-25-21 Thursday EDT 09:54:23
+{INFO} -  [com.smile.log.SmileLog]   -     1) Employee Login     Mar-25-21 Thursday EDT 09:54:23
+{INFO} -  [com.smile.log.SmileLog]   -     2) Customer Login     Mar-25-21 Thursday EDT 09:54:23
+{INFO} -  [com.smile.log.SmileLog]   -     3) Register for an Account     Mar-25-21 Thursday EDT 09:54:23
+{INFO} -  [com.smile.log.SmileLog]   -     4) Exit App     Mar-25-21 Thursday EDT 09:54:23
+{INFO} -  [com.smile.log.SmileLog]   -          Mar-25-21 Thursday EDT 09:54:23
+{INFO} -  [com.smile.log.SmileLog]   -     Type and enter the number for your selection     Mar-25-21 Thursday EDT 09:54:23
+{INFO} -  [com.smile.log.SmileLog]   -          Mar-25-21 Thursday EDT 09:54:23
+{INFO} -  [com.smile.log.SmileLog]   -     Awaiting Your Response:     Mar-25-21 Thursday EDT 09:54:23
+{INFO} -  [com.smile.log.SmileLog]   -     Thank You for using Smile Bank! Goodbye!     Mar-25-21 Thursday EDT 09:54:25

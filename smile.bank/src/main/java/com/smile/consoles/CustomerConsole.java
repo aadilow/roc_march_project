@@ -41,22 +41,26 @@ public class CustomerConsole {
 				break;
 			case 2:
 				// Withdraw
-				run.WithdrawMethod();
+				//run.WithdrawMethod();
+				smile.message("WIP");
 				ch = 0;
 				break;
 			case 3:
 				// Deposit
-				run.DepositMethod();
+				//run.DepositMethod();
+				smile.message("WIP");
 				ch = 0;
 				break;
 			case 4:
 				// Transfer
-				run.TransferMethod();
+				//run.TransferMethod();
+				smile.message("WIP");
 				ch = 0;
 				break;
 			case 5:
 				// Send Money
-				run.SendMoneyMethod();
+				//run.SendMoneyMethod();
+				smile.message("WIP");
 				ch = 0;
 				break;
 			case 6:
