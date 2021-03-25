@@ -1,82 +1,104 @@
 package com.smile.model;
 
 public class Transactions {
+	private int target_customer_id; 
+	private int target_acc_num; 
+	private String target_account_type; 
 	private int customer_id;
-	private String transaction_type;
-	private String account_type;
-	private double transaction_amount;
-	
-	
+	private int acc_num; 
+	private String account_type; 
+	private double balance;
+	private double amount;
 	
 	public Transactions() {
 		// TODO Auto-generated constructor stub
 	}
 
-
-
-	public Transactions(int customer_id, String transaction_type, String account_type, double transaction_amount) {
+	public Transactions(int target_customer_id, int target_acc_num, String target_account_type, int customer_id,
+			int acc_num, String account_type, double balance, double amount) {
 		super();
+		this.target_customer_id = target_customer_id;
+		this.target_acc_num = target_acc_num;
+		this.target_account_type = target_account_type;
 		this.customer_id = customer_id;
-		this.transaction_type = transaction_type;
+		this.acc_num = acc_num;
 		this.account_type = account_type;
-		this.transaction_amount = transaction_amount;
+		this.balance = balance;
+		this.amount = amount;
 	}
 
+	public int getTarget_customer_id() {
+		return target_customer_id;
+	}
 
+	public void setTarget_customer_id(int target_customer_id) {
+		this.target_customer_id = target_customer_id;
+	}
+
+	public int getTarget_acc_num() {
+		return target_acc_num;
+	}
+
+	public void setTarget_acc_num(int target_acc_num) {
+		this.target_acc_num = target_acc_num;
+	}
+
+	public String getTarget_account_type() {
+		return target_account_type;
+	}
+
+	public void setTarget_account_type(String target_account_type) {
+		this.target_account_type = target_account_type;
+	}
 
 	public int getCustomer_id() {
 		return customer_id;
 	}
 
-
-
 	public void setCustomer_id(int customer_id) {
 		this.customer_id = customer_id;
 	}
 
-
-
-	public String getTransaction_type() {
-		return transaction_type;
+	public int getAcc_num() {
+		return acc_num;
 	}
 
-
-
-	public void setTransaction_type(String transaction_type) {
-		this.transaction_type = transaction_type;
+	public void setAcc_num(int acc_num) {
+		this.acc_num = acc_num;
 	}
-
-
 
 	public String getAccount_type() {
 		return account_type;
 	}
 
-
-
 	public void setAccount_type(String account_type) {
 		this.account_type = account_type;
 	}
 
-
-
-	public double getTransaction_amount() {
-		return transaction_amount;
+	public double getBalance() {
+		return balance;
 	}
 
-
-
-	public void setTransaction_amount(double transaction_amount) {
-		this.transaction_amount = transaction_amount;
+	public void setBalance(double balance) {
+		this.balance = balance;
 	}
 
+	public double getAmount() {
+		return amount;
+	}
 
+	public void setAmount(double amount) {
+		this.amount = amount;
+	}
 
 	@Override
 	public String toString() {
-		return "Transactions [customer_id=" + customer_id + ", transaction_type=" + transaction_type + ", account_type="
-				+ account_type + ", transaction_amount=" + transaction_amount + "]";
+		return "Transactions [target_customer_id=" + target_customer_id + ", target_acc_num=" + target_acc_num
+				+ ", target_account_type=" + target_account_type + ", customer_id=" + customer_id + ", acc_num="
+				+ acc_num + ", account_type=" + account_type + ", balance=" + balance + ", amount=" + amount + "]";
 	}
 	
+	
+
 
 }

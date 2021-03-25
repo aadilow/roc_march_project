@@ -41,18 +41,22 @@ public class CustomerConsole {
 				break;
 			case 2:
 				// Withdraw
+				run.WithdrawMethod();
 				ch = 0;
 				break;
 			case 3:
 				// Deposit
+				run.DepositMethod();
 				ch = 0;
 				break;
 			case 4:
 				// Transfer
+				run.TransferMethod();
 				ch = 0;
 				break;
 			case 5:
 				// Send Money
+				run.SendMoneyMethod();
 				ch = 0;
 				break;
 			case 6:

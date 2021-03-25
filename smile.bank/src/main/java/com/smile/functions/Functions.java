@@ -4,10 +4,13 @@ import java.util.Scanner;
 
 import com.smile.consoles.OpenAccountConsole;
 import com.smile.exception.SmileException;
+import com.smile.functions.dao.impl.NewTransactionDAOImpl;
 import com.smile.functions.service.ApproveAccountService;
+import com.smile.functions.service.NewTransactionService;
 import com.smile.functions.service.OpenAccountService;
 import com.smile.functions.service.ViewAccountService;
 import com.smile.functions.service.impl.ApproveAccountServiceImpl;
+import com.smile.functions.service.impl.NewTransactionServiceImpl;
 import com.smile.functions.service.impl.OpenAccountServiceImpl;
 import com.smile.functions.service.impl.ViewAccountServiceImpl;
 import com.smile.log.SmileLog;
@@ -20,6 +23,7 @@ public class Functions {
 	OpenAccountService OAS = new OpenAccountServiceImpl();
 	ApproveAccountService AAS = new ApproveAccountServiceImpl();
 	ViewAccountService VAS = new ViewAccountServiceImpl();
+	NewTransactionService NTC = new NewTransactionServiceImpl();
 
 	// *************Customer Methods********************
 	public void OpenAccountMethod(String email) {
@@ -127,10 +131,11 @@ public class Functions {
 			}
 		} while (ch != 3);
 	}
+
 	public void ViewAccountMethod() {
 		String account_type = null;
 		int ch = 0;
-		int ID=0;
+		int ID = 0;
 		do {
 			try {
 				smile.message("");
@@ -150,16 +155,16 @@ public class Functions {
 					smile.message("Search by entering Customer ID");
 					smile.message("");
 					try {
-					ID=Integer.parseInt(scanner.nextLine());
-					} catch(NumberFormatException e) {
-						
+						ID = Integer.parseInt(scanner.nextLine());
+					} catch (NumberFormatException e) {
+
 					}
-					
-					VAS.viewAccount(ID,account_type);
-					ID=0;
+
+					VAS.viewAccount(ID, account_type);
+					ID = 0;
 				} catch (SmileException e) {
-					smile.warn("No account found for Customer ID " +ID);
-					//e.printStackTrace();
+					smile.warn("No account found for Customer ID " + ID);
+					// e.printStackTrace();
 				}
 				ch = 0;
 				break;
@@ -168,16 +173,16 @@ public class Functions {
 				try {
 					smile.message("Search by entering Customer ID");
 					try {
-					ID=Integer.parseInt(scanner.nextLine());
-					} catch(NumberFormatException e) {
-						
+						ID = Integer.parseInt(scanner.nextLine());
+					} catch (NumberFormatException e) {
+
 					}
-					
-					VAS.viewAccount(ID,account_type);
-					ID=0;
+
+					VAS.viewAccount(ID, account_type);
+					ID = 0;
 				} catch (SmileException e) {
-					smile.warn("No account found for Customer ID " +ID);
-					//e.printStackTrace();
+					smile.warn("No account found for Customer ID " + ID);
+					// e.printStackTrace();
 				}
 				ch = 0;
 				break;
@@ -190,22 +195,62 @@ public class Functions {
 				smile.error();
 			}
 
-			
 		} while (ch != 3);
 	}
-	
+
 	public void ViewTransactionLog() {
-		
+
 	}
-	
-	public void NewTransaction() {
+
+	public void WithdrawMethod() {
+		int customer_id = 0;
+		int acc_num = 0;
+		String account_type = null;
+		double balance = 0;
+		double amount = 0;
+		smile.message("What is your customer ID? ");
+		try {
+			customer_id = Integer.parseInt(scanner.nextLine());
+		} catch (NumberFormatException e) {
+		}
 		
+		smile.message("What is your account number? ");
+		try {
+			acc_num = Integer.parseInt(scanner.nextLine());
+		} catch (NumberFormatException e) {
+		}
+		
+		smile.message("How much would you like to withdraw? ");
+		try {
+			amount = Double.parseDouble(scanner.nextLine());
+		} catch (NumberFormatException e) {
+		}
+
+		try {
+			NTC.withdrawAcc(customer_id, acc_num, account_type, balance, amount);
+		} catch (SmileException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
 	}
-	
+
+	public void DepositMethod() {
+
+	}
+
+	public void TransferMethod() {
+
+	}
+
+	public void SendMoneyMethod() {
+
+	}
+
 	public void ViewAccountCustomer(int ID) {
 		String account_type = null;
 		int ch = 0;
-		
+
 		do {
 			try {
 				smile.message("");
@@ -222,12 +267,12 @@ public class Functions {
 			case 1:
 				account_type = "checking";
 				try {
-					
-					VAS.viewAccount(ID,account_type);
+
+					VAS.viewAccount(ID, account_type);
 
 				} catch (SmileException e) {
-					smile.warn("No account found for Customer ID " +ID);
-					//e.printStackTrace();
+					smile.warn("No account found for Customer ID " + ID);
+					// e.printStackTrace();
 				}
 				ch = 0;
 				break;
@@ -236,14 +281,14 @@ public class Functions {
 				try {
 					smile.message("Search by entering Customer ID");
 					try {
-					} catch(NumberFormatException e) {
-						
+					} catch (NumberFormatException e) {
+
 					}
-					
-					VAS.viewAccount(ID,account_type);
+
+					VAS.viewAccount(ID, account_type);
 				} catch (SmileException e) {
-					smile.warn("No account found for Customer ID " +ID);
-					//e.printStackTrace();
+					smile.warn("No account found for Customer ID " + ID);
+					// e.printStackTrace();
 				}
 				ch = 0;
 				break;
@@ -256,8 +301,7 @@ public class Functions {
 				smile.error();
 			}
 
-			
 		} while (ch != 3);
 	}
-	
+
 }
